@@ -45,7 +45,7 @@ $(TARGET): $(ROEO_LIB) $(OBJS)
 # 编译
 $(BUILD_DIR)/%.o: %.c
 	@mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@ 
 
 
 .PHONY: clean
