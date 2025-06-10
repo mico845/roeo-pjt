@@ -1,7 +1,4 @@
-#include <stdint.h>
 #include <stdio.h>
-#include "device/peripheral/roeo_dev_gpio.h"
-#include "device/roeo_device.h"
 #include "roeo.h"
 
 int main() {
@@ -23,6 +20,6 @@ int main() {
     roeo_dev_write(fd, &(uint8_t){0}, sizeof(uint8_t));
     roeo_dev_read(fd, &value, sizeof(uint8_t));
     printf("GPIO value: %d\n", value);
-    
+
     return 0;
 }
